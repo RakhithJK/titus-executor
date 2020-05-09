@@ -346,7 +346,7 @@ func (vpcService *vpcService) getLongLivedTasks() []longLivedTask {
 	return []longLivedTask{
 		vpcService.reconcileBranchENIAttachmentsLongLivedTask(),
 		{
-			taskName:   "gc_enis",
+			taskName:   "gc_enis_sarguntmp",
 			itemLister: vpcService.getBranchENIRegionAccounts,
 			workFunc:   vpcService.doGCAttachedENIsLoop,
 		},
